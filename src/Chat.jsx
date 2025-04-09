@@ -14,7 +14,7 @@ function Chat() {
     const handleSubmit = async () => {
         if (!inputText.trim()) return;
 
-        const messageWithSummary = inputText + " dame respuestas cortas";
+        const messageWithSummary = inputText ;
 
         const newMessage = { text: `Tú: ${inputText}`, sender: 'user' };
         setChatMessages((prevMessages) => [...prevMessages, newMessage]);
